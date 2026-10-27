@@ -1,0 +1,6 @@
+id_incidencia,cliente,email_contacto,asunto,estado,prioridad
+1,Ana Ruiz,ana@example.com,Acceso al correo,ABIERTA,ALTA
+2,Luis Martin,luis@example.com,Equipo sin conexion,EN CURSO,ALTA
+3,Marta Leon,marta@example.com,Instalacion de impresora,ABIERTA,MEDIA
+4,Diego Perez,diego@example.com,Solicitud de usuario,CERRADA,BAJA
+5,Sara Gomez,sara@example.com,Carpeta compartida,EN CURSO,MEDIA
