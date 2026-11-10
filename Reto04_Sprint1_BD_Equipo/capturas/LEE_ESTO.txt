@@ -1,0 +1,4 @@
+Guarda aquí tus capturas reales.
+No copies imágenes ilustrativas de images/ como si fueran pruebas.
+Hoy: 01_estructura_y_datos.png y 02_conexion_admin_equipo.png.
+17 de noviembre: 03_pruebas_permisos.png y 04_repositorio_github.png.
