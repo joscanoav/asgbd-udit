@@ -1,0 +1,93 @@
+
+MySQL instalado y base de datos inicial · ASGBD
+
+
+
+## Objetivo
+
+Instalar y preparar MySQL para el proyecto integrado de 2.º DAM y 2.º ASIR, dejando operativa una primera base de datos común para el equipo.
+
+La instalación se realizará en el entorno de infraestructura acordado por el equipo (AWS o VPS, según la decisión del entregable de ASO). Durante el desarrollo podrán utilizarse máquinas virtuales locales como entorno de pruebas, pero la entrega deberá contemplar la conexión al servidor compartido.
+
+## Tareas
+
+- [ ] Coordinar con ASO el entorno y servidor donde se instalará MySQL.
+- [ ] Instalar y comprobar que MySQL 8.4 está operativo.
+- [ ] Crear la base de datos inicial `proyecto_udit`.
+- [ ] Crear la estructura provisional de la tabla `contenidos`.
+- [ ] Crear las credenciales de acceso del equipo con permisos limitados a la base de datos.
+- [ ] Configurar el acceso de red necesario, coordinándolo con los responsables de infraestructura.
+- [ ] Comprobar la conexión desde DBeaver utilizando las credenciales del equipo.
+- [ ] Realizar pruebas de conexión desde otro equipo autorizado.
+- [ ] Coordinar con DAM los identificadores y las rutas de los contenidos.
+- [ ] Documentar la instalación, los scripts SQL y las pruebas realizadas.
+- [ ] Integrar los cambios en `main` mediante una Pull Request revisada.
+
+## Criterios de finalización
+
+- MySQL está operativo en el entorno acordado.
+- Existe la base de datos inicial `proyecto_udit`.
+- El equipo puede conectarse utilizando sus propias credenciales.
+- Los permisos están limitados según las necesidades del proyecto.
+- Se ha verificado la conectividad desde un equipo autorizado.
+- Los scripts SQL y las pruebas están documentados.
+- Los cambios están integrados en `main` mediante una Pull Request revisada.
+
+## Evidencias
+
+- Scripts SQL de creación y configuración.
+- Documentación del servidor y de la conexión.
+- Capturas de las pruebas de conexión desde DBeaver.
+- Prueba de conexión desde otro equipo autorizado.
+- Documentación de los permisos y credenciales (sin publicar contraseñas).
+
+## Alcance y continuidad
+
+En esta primera fase, el trabajo se desarrollará en la máquina virtual Windows 11 de laboratorio, con MySQL 8.4 y DBeaver instalado en el ordenador físico.
+
+Los scripts SQL, la estructura de la base de datos y las pruebas se incorporarán al repositorio GitHub del equipo mediante Pull Request.
+
+Esta preparación servirá como base para el posterior despliegue de MySQL en el entorno compartido del proyecto, una vez que ASO haya definido y preparado la infraestructura.
+
+La instalación local en la máquina virtual es un entorno de trabajo y pruebas; no sustituye al futuro servidor compartido del proyecto.
+
+## Organización del repositorio y entrega
+
+Todo el trabajo de ASGBD se incorporará al repositorio oficial del subequipo ASIR:
+
+`UDIT-EFP/2asir-equipo1`
+
+No se creará un repositorio independiente para este reto.
+
+La estructura de archivos será:
+
+```text
+2asir-equipo1/
+├── db/
+│   ├── 01_estructura.sql
+│   ├── 02_usuario_admin.sql
+│   └── 03_pruebas_admin.sql
+├── docs/
+│   ├── acuerdo-tecnico.md
+│   ├── bitacora.md
+│   ├── sprints.md
+│   └── retos/
+│       └── reto04-asgbd.md
+├── images/
+├── capturas/
+├── .gitignore
+└── README.md
+```
+
+El README principal del repositorio se conserva como documento general del proyecto. La documentación específica de ASGBD se organizará dentro de `docs/retos/`.
+
+### Procedimiento de entrega
+
+1. Trabajar en una rama propia.
+2. Incorporar los scripts SQL, documentación y evidencias en las carpetas correspondientes.
+3. Realizar un commit con los cambios.
+4. Abrir una Pull Request hacia `main`.
+5. Solicitar la revisión de otro compañero.
+6. Integrar los cambios una vez aprobados.
+
+No se subirán contraseñas, claves privadas, tokens ni archivos `.env`.
